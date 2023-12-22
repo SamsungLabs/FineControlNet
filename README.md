@@ -22,3 +22,23 @@ __Why FineControlNet?__
 # News
 
 2023/12/14 - Our preprint is released in arXiv. 
+
+# Meta information
+
+## Citation
+
+Hongsuk Choi and Isaac Kasahra equally contributed. If you find this work useful, please consider citing:
+
+
+```
+@article{choi2023finecontrolnet,
+  title={FineControlNet: Fine-level Text Control for Image Generation with Spatially Aligned Text Control Injection},
+  author={Choi, Hongsuk and Kasahara, Isaac and Engin, Selim and Graule, Moritz and Chavan-Dafle, Nikhil and Isler, Volkan},
+  journal={arXiv preprint arXiv:2312.09252},
+  year={2023}
+}
+```
+
+## License 
+
+This project is licensed under the terms of CC-BY-NC 4.0.
