@@ -1,0 +1,18 @@
+target: metrics.evaluation_metrics.EvaluationMetrics
+params:
+  device: "cuda"
+  # metrics: ["text", "quality", "pose"]
+  metrics: []
+  pose:
+    mmpose_config_file: './metrics/humansd_data/higherhrnet_w48_coco_512x512_udp.py'
+    mmpose_checkpoint_file: './metrics/humansd_data/higherhrnet_w48_humanart_512x512_udp.pth'
+    tmp_res_dir: "outputs/metrics_logs"
+  quality:
+    refer_dataset_name: "humanart" # coco
+    refer_dataset_base_dir: "/labdata/datasets/HumanArt" # "/labdata/hongsuk/MSCOCO/2017"
+    refer_dataset_json_path: "/labdata/datasets/HumanArt/HumanArt/annotations/validation_humanart.json" #  validation_coco.json
+    fid_model_feature: 64
+    kid_subset_size: 250
+    normalized: False
+  text:
+    clip_similarity_score_model_name: "openai/clip-vit-base-patch16"
